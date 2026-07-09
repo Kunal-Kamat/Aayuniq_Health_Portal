@@ -1,0 +1,25 @@
+{
+  "name": "aayuniq-health-portal",
+  "version": "1.0.0",
+  "description": "Full-stack health portal application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "health",
+    "portal",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Aayuniq Health Portal Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^10.9.1",
+    "concurrently": "^8.2.2"
+  }
+}
