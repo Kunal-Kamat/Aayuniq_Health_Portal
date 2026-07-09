@@ -1,0 +1,10 @@
+flowchart TD
+  classDef step fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1
+  classDef success fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+  classDef error fill:#FFEBEE,stroke:#E53935,stroke-width:2px,color:#B71C1C
+
+  A[Enter email + password]:::step --> B[Verify credentials]:::step
+  B --> C{Match?}
+  C -- Yes --> D[Issue JWT, set lastLogin]:::success
+  C -- No --> E[Show error, Retry]:::error
+

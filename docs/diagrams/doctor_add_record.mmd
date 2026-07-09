@@ -1,0 +1,21 @@
+flowchart TD
+  classDef step fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1
+  classDef api fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+  classDef db fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
+  classDef ui fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1
+
+  A[Doctor fills form]:::ui --> B[Submit]:::ui
+  B --> C[API validates JWT]:::api
+  C --> D[Check patient + doctor exist]:::api
+  D --> E[Save record to MongoDB]:::db
+  E --> F[Return success]:::api
+  F --> G[UI shows confirmation]:::ui
+
+
+
+
+
+
+
+
+

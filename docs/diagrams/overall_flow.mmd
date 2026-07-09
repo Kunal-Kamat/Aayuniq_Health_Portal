@@ -1,0 +1,19 @@
+flowchart TD
+  classDef ui fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1
+  classDef api fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+  classDef db fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
+  classDef user fill:#FCE4EC,stroke:#D81B60,stroke-width:2px,color:#880E4F
+
+  U[User]:::user -->|opens| UI[React App]:::ui
+  UI -->|requests| API[Node/Express]:::api
+  API -->|queries/writes| DB[(MongoDB)]:::db
+  API -->|JSON| UI
+
+
+
+
+
+
+
+
+

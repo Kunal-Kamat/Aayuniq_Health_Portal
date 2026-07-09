@@ -1,0 +1,23 @@
+flowchart LR
+  classDef ui fill:#E3F2FD,stroke:#1E88E5,stroke-width:2px,color:#0D47A1
+  classDef api fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+  classDef db fill:#FFF3E0,stroke:#FB8C00,stroke-width:2px,color:#E65100
+  classDef success fill:#E8F5E9,stroke:#43A047,stroke-width:2px,color:#1B5E20
+
+  %% Backbone
+  UI[React UI]:::ui --> API[Express API]:::api --> DB[(MongoDB)]:::db
+
+  %% Patient
+  P1[Patient login - OTP]:::ui --> P2[JWT]:::success --> P3[Patient Dashboard]:::ui
+  P3 --> P4[Timeline]
+  P3 --> P5[PDF]
+
+  %% Doctor
+  D1[Doctor login - password]:::ui --> D2[JWT]:::success --> D3[Doctor Dashboard]:::ui
+  D3 --> D4[Patients]
+  D3 --> D5[Add Record]
+
+  %% Government
+  G1[Gov login - password]:::ui --> G2[JWT]:::success --> G3[Gov Dashboard]:::ui
+  G3 --> G4[Metrics]
+  G3 --> G5[Filters]
