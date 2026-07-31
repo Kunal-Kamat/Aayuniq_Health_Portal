@@ -184,13 +184,13 @@ This project is technically feasible because:
 - **Environmental**: Fewer paper records and printouts through digital sharing
 
 ### Technologies Used
-- [React](https://react.dev) - The frontend framework
-- [React Router](https://reactrouter.com) - Navigation
-- [TypeScript](https://www.typescriptlang.org/docs/) - Type safety
-- [Tailwind CSS](https://tailwindcss.com/docs) - Styling
-- [Framer Motion](https://www.framer.com/motion/) - Animations
-- [Node.js](https://nodejs.org/en/docs) - Backend runtime
-- [Express](https://expressjs.com/en/guide/routing.html) - API framework
-- [MongoDB](https://www.mongodb.com/docs/manual/) - Database
-- [Mongoose](https://mongoosejs.com/docs/guide.html) - ODM
+- React - The frontend framework
+- React Router - Navigation
+- TypeScript - Type safety
+- Tailwind CSS - Styling
+- Framer Motion - Animations
+- Node.js - Backend runtime
+- Express - API framework
+- MongoDB - Database
+- Mongoose - ODM
 
